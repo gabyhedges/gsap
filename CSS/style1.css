@@ -1,0 +1,66 @@
+/*targets the whole page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*creates the colour variables*/
+:root{
+--background:  #f56ad9;
+    --title: #fff;
+    --button: #670cde;
+    --back-button: rgba(8, 236, 76, 0.786);
+    --inner-text: #fff;
+}
+/*sets the background colour on the page*/
+body {
+    background-color: var(--background);
+}
+/*targets the overall wrapper for positioning*/
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*targets the title that appears on the screen*/
+.title {
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: var(--title);
+}
+/*targets the ballooon*/
+.balloon {
+    width: 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/*targets the shadow*/
+#shadow {
+    width: 100px;
+    height: 30px;
+    background: radial-gradient(ellipse at center, rgb(51, 38, 47) 0%, rgba(30, 28, 28, 0) 50%);
+    position: absolute;
+    z-index: -1;
+    transform: translateY(75px);
+    opacity: 1.5;
+    bottom: 140px;
+}
+.back_button {
+    background-color: var(--back-button);
+    border: none;
+    color: var(--inner-text);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}

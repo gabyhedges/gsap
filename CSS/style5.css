@@ -1,0 +1,89 @@
+/*affects the whole page*/
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+/*creates the variables for the colours*/
+:root {
+    --smoke-color: #fff;
+    --background-color: #000;
+    --text-color: #e8b605;
+    --back-button: rgba(8, 236, 76, 0.786);
+    --inner-text: #fff;
+}
+body {
+    background-color: var(--background-color);
+    height: 200px;
+
+}
+.wrapper {
+    height: 100px;
+    margin-top: 10px;
+    display:flex;
+    flex-flow:row wrap;
+}
+.smoke_container {
+    width: 90%;
+    height: 100px;
+    left:300px;
+    position:absolute;
+    top:200px;
+
+}
+#area{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title  {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--text-color);
+
+    font-size: 60px;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    margin: 0;
+    width:80%;
+}
+.hidden {
+    position: absolute;
+    z-index: 100;
+    
+
+}
+.smoke {
+    width: 5px;
+    height: 5px;
+    border-radius: 30% 20% 10% 10%;
+    background-color: var(--smoke-color);
+    opacity: 0.3;
+}
+.back_button {
+    background-color: var(--back-button);
+    border: none;
+    color: var(--inner-text);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}

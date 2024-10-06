@@ -1,0 +1,80 @@
+/*defines the colours used*/
+:root {
+    --background: #1d1d1d;
+    --dragger: rgb(236, 8, 8);
+    --title: #74a9e9;
+    --subtitle: #fff;
+    --back-button: rgba(8, 236, 76, 0.786);
+    --inner-text: #fff;
+}
+/* affects the whole body of the webpage*/
+body {
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    margin: 0;
+    
+    background: var(--background)
+}
+/*positions the entire thing*/
+#overview {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+/*sets the size of the gallery*/
+.gallery {
+    width: 950px;
+    height: 640px;
+    
+    
+}
+/*affects the image*/
+.gallery img {
+    width: 950px;
+    height: 640px;
+    position: absolute;
+    clip-path: inset(0 950px 0 0);
+
+}
+/*is the dragger for the image*/
+.dragger {
+    width: 10px;
+    height: 640px;
+    background-color: var(--dragger);
+    opacity: 0.5;
+    position: absolute;
+  
+}
+/*the title that appears on the screen*/
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--title);
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px
+}
+/*the subtitle that appears on the screen*/
+.subtitle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--subtitle);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.back_button {
+    background-color: var(--back-button);
+    border: none;
+    color: var(--inner-text);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}

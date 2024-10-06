@@ -1,0 +1,61 @@
+/*affects the whole site*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*assigns the colour variables*/
+  :root{
+    --space: #000;
+    --text-color: #a223f6;
+    --star: #fff;
+    --back-button: rgba(8, 236, 76, 0.786);
+    --inner-text: #fff;
+  }
+  /*affects the whole page*/
+  body {
+    background-color: var(--space);
+  }
+  /*code that targets the title appearing on the screen*/
+  .title {
+  font-family: Audiowide;
+  font-size: 50px;
+  color: var(--text-color);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1000;
+  }
+  /*this targets the space div*/
+  #space {
+      perspective: 3000px;
+      position: relative;
+      background: var(--space);
+    }
+    /*this targeys the star divs that we make in the javascript file*/
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background-color: var(--star);
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .back_button {
+        background-color: var(--back-button);
+        border: none;
+        color: var(--inner-text);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+  

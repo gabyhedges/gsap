@@ -1,0 +1,87 @@
+
+<!--basic boilerplate-->
+<!--sets the page to html-->
+<!DOCTYPE html>
+<!--sets the language to english-->
+<html lang="en">
+<head>
+  <!--sets the charcter set for browsers-->
+    <meta charset="UTF-8">
+    <!--ensures the browser works on all device sizes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title for the page that the browser uses to search-->
+    <title>Smiley face blinking</title>
+    <!--link to the style sheet-->
+    <link rel="stylesheet" href="CSS/style6.css">
+    <!--link to the javascript file-->
+    <script src="script6.js" defer></script>
+    
+     
+   
+</head>
+<body>
+<!--the title that appears on the screen-->
+<div class="title_box">
+<div class="title">
+    Smiley Face Blinking
+    
+  </div>
+  <div class="title">
+    Smiley Face Blinking
+    
+  </div>
+  
+</div>
+
+
+<div class="smiley_face_container">
+<!-- smiley face blinking -->
+<svg id="face-smiley" x="0px" y="0px" width="170" height="600" overflow="visible">
+
+  
+    <!-- Face -->
+    <circle fill="#FFD700" cx="0" cy="0" r="60" />
+
+    <!-- Eyes -->
+    <circle fill="#333" cx="-15" cy="-10" r="6" />
+    <circle fill="#333" cx="15" cy="-10" r="6" />
+
+    <!-- Mouth -->
+    <path id="mouth" fill="#333" d="M -20 15 Q 0 25 20 15" />
+
+  <!--the eyes and lids-->
+  <g id="eye_right" transform="matrix(1 0.1 -0.2 1.6 12.3 -18.2)">
+    <g id="pupil_right">
+      <circle fill="#333333" cx="0" cy="0" r="10" />
+    </g>
+    <g id="lid_top_right">
+      <polygon fill="#FFE009" points="-12,0 -5,-12 5,-12 12,0" />
+    </g>
+    <g id="lid_bottom_right">
+      <polygon fill="#FFE009" points="-12,0 12,0 5,12 -5,12" />
+    </g>
+
+  </g>
+  <g id="eye_left" transform="matrix(1 -0.1 0.2 1.6 -13.7 -17.5)">
+    <g id="pupil_left">
+      <circle fill="#333333" cx="0" cy="0" r="10" />
+    </g>
+    <g id="lid_top_left">
+      <polygon fill="#FFE009" points="-12,0 -5,-12 5,-12 12,0" />
+    </g>
+    <g id="lid_bottom_left">
+      <polygon fill="#FFE009" points="-12,0 12,0 5,12 -5,12" />
+    </g>
+  </g>
+
+
+</svg>
+</div>
+
+
+<!--link to the jquery libarary cdn-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!--link to the greensiock library cdn-->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> 
+</body>
+</html>

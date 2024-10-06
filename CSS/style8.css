@@ -1,0 +1,74 @@
+/*affects the whole site*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*applies the colours*/
+:root {
+    --background:  rgb(0, 0, 0);
+    --title: rgb(243, 236, 236);
+    --emitter: #222;
+    --dot: #4c9a0f;
+    --back-button: rgba(8, 236, 76, 0.786);
+    --inner-text: #fff;
+}
+/*affects the whole body of the page*/
+body {
+    background-color: var(--background);
+    height: 100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    }
+    /*the title*/
+    h1 {
+        color: var(--title);
+        text-align: center;
+        font-size: 50px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /*the subtitle*/
+    h2 {
+        color: var(--title);
+        text-align: center;
+        font-size: 30px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /*affects the emitter. gives it its look and feel*/
+    #emitter {
+    background-color: var(--emitter);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    }
+    /*gives the dots their look and feel*/
+    .dot {
+    background-color: var(--dot);
+    border-radius: 50%;
+    position: absolute;
+    z-index:100;
+    pointer-events:none;
+    }
+    /*gives the back button its look and feel*/
+    .back_button {
+        background-color: var(--back-button);
+        border: none;
+        color: var(--inner-text);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    

@@ -1,0 +1,71 @@
+/*affects the webpage*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*defines the colours*/
+:root {
+    --background: rgb(46, 170, 211);
+    --text: rgb(208, 16, 16);
+    --back-button: rgba(8, 236, 76, 0.786);
+    --inner-text: #fff;
+}
+/*affects the whole body of the webpage*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-color: var(--background);
+    display:flex;
+    flex-flow:row wrap;
+}
+/*affects the words displayed on the screen in the title*/
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 150px;
+    color: var(--text);
+    
+
+}
+/*limits to div surrounding the text title*/
+.title_box {
+    width:100%;
+    height: 220px;
+    overflow: hidden;
+}
+/*affects the container with the svg in it so it can be positioned*/
+.container > svg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:200px;
+    height:300px;
+  }
+  
+ /*positions the smileyface container*/
+  .smiley_face_container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: 200px;
+    width:70%;
+  }
+  .back_button {
+    background-color:var(--back-button) ;
+    border: none;
+    color: var(inner-text);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+/*defines the colours used*/
+:root {
+    --background: rgb(3, 3, 3);
+    --light: rgba(168, 245, 191, 0.786);
+    --subtitle: #fff;
+    --btn: rgba(8, 236, 76, 0.786);
+    --inner-text: #fff;
+  
+}
+
+/*affects the whole body of the webpage*/
+body {
+    background-color: var(--background);
+}
+/*affects the header section*/
+header {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    
+}
+/*affects the logo*/
+.logo {
+    width: 200px;
+    height: 100px;
+    margin-top: 50px;
+}
+.man {
+    width: 10%;
+}
+/*this is the container that houses everythin*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+/*this affects the text box*/
+.text_container {
+    
+    margin-top: 300px;
+}
+/*the titles and subtitles*/
+ h2, h3 {
+    color: var(--subtitle);
+    margin-bottom: 0.5em;
+}
+h1 {
+    font-size: 3em;
+    color: var(--btn);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 35px;
+}
+/*paragraph tag*/
+p {
+    font-size: 1.5em;
+    color: var(--subtitle);
+}
+.heading {
+    color: var(--light);
+}
+/*the butooms so they are uniform*/
+.btn {
+    background-color: var(--btn);
+    border: none;
+    color: var(--inner-text);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}

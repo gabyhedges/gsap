@@ -1,0 +1,89 @@
+/*defines the colours*/
+:root {
+    --dragger: rgba(236, 26, 3, 0.905);
+    --title: #ea07ea98; 
+    --subtitle: #f5bfe9;
+    --back-button: rgba(8, 236, 76, 0.786);
+    --inner-text: #fff;
+}
+
+/*affects the whole webpage body*/
+body {
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    margin: 0;
+    
+    background: #1d1d1d;
+}
+/*centers the whole design*/
+#overview {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+/*affects th gallery container and sets its dimensions*/
+.gallery {
+    width: 950px;
+    height: 640px;
+    
+    
+}
+/*affects the image*/
+.gallery img {
+    width: 950px;
+    height: 640px;
+    position: absolute;
+
+}
+/*affects the dragging line*/
+.dragger {
+    width: 10px;
+    height: 640px;
+    background-color: var(--dragger);
+    opacity: 0.5;
+    position: absolute;
+  
+}
+/*affects the title*/
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--title);
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px
+}
+/*affects the subtitle*/
+.subtitle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--subtitle);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.title_box {
+    overflow: hidden;
+    
+}
+/*is the clipped class that the javascript file uses to desaturate the image*/
+.clipped {
+    filter:saturate(0);
+
+    
+}
+.back_button {
+    background-color: var(--back-button);
+    border: none;
+    color: var(--inner-text);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}

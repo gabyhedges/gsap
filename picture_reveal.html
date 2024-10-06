@@ -1,0 +1,54 @@
+
+<!--basic boilerplate-->
+<!--sets the page to html-->
+<!DOCTYPE html>
+<!--sets the language to english-->
+<html lang="en">
+<head>
+  <!--sets the charcter set for browsers-->
+    <meta charset="UTF-8">
+    <!--ensures the browser works on all device sizes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title for the page that the browser uses to search-->
+    <title>Picture Reveal</title>
+    <!--link to the style sheet-->
+    <link rel="stylesheet" href="CSS/style3.css">
+    <!--link to the javascript file-->
+    <script src="script3.js" defer></script>
+    
+     
+   
+</head>
+<body>
+  <div id="overview">
+<!--the title that appears on the screen-->
+<div class="title_box">
+<div class="title">
+    Picture Reveal
+  <!--the subtitle that appears on the screen-->  
+  </div>
+  <div class="subtitle">
+    Slide the slider to reveal the picture back and forth
+  
+</div>
+<!--the images that appear on the screen-->
+<div class="gallery">
+    <img src="images/underwater.jpg">
+    <img class="clipped" src="images/underwater.jpg">
+<div class="dragger"></div>
+</div>
+</div>
+        
+ 
+
+
+
+
+<!--link to the jquery libarary cdn-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!--link to the greensiock library cdn-->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> 
+<!--link to the draggable component of greensock gsap cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js" integrity="sha512-G7Wpe/pbg+zjyyM9HgQY6kacLAy+580lmA8DUXmZtioTI5FkaCRoLOaCLoeblrZABs7KZFD03cfSV9j7nmwxfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
